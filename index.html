@@ -6,7 +6,7 @@
         content="IE=edge">
         <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>minesweeper</title>
         <link rel="stylesheet" href="./assets/styles.css">
         <script src="minesweeper.js" ></script>
     </head>
@@ -102,12 +102,15 @@
     var active = document.querySelectorAll(".active")
     var boardDiv = document.querySelectorAll("#board div")
     var time = 0;
-    document.querySelector("#timer").innerHTML =time
-   
+    var mineCount = document.getElementById("mines-count")
+    document.querySelector("#timer").innerHTML = time
+    
     setInterval(setTimer,1000)
     function setTimer(){
+        if(mineCount != "won"){
         time++;
-        document.querySelector("#timer").innerHTML =time;
+        }
+        document.querySelector("#timer").innerHTML = time;
     }
        
     

@@ -94,6 +94,7 @@ function startGame() {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
             tile.addEventListener("click", clickTile);
+            // tile.addEventListener("contextmenu",putFlag)
             document.getElementById("board").append(tile);
             row.push(tile);
         }
@@ -213,9 +214,10 @@ function checkMine(r, c) {
     }
 
     if (tilesClicked == rows * columns - minesCount) {
-        document.getElementById("mines-count").innerText = "Cleared";
+        document.getElementById("mines-count").innerText = "won";
+        alert("u win")
         gameOver = true;
-    }
+        location.reload();    }
 
 }
 
