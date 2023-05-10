@@ -177,7 +177,6 @@ body{
     font-size: 20px;
     background-color: lightgray;
     
-    border: 5px solid black;
 }
 
 #flag1:hover, #flag2:hover, #flag3:hover,#bomb1:hover, #bomb2:hover, #bomb3:hover{
@@ -187,6 +186,11 @@ body{
 #flag1, #flag2, #flag3,#bomb1, #bomb2, #bomb3{
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.undo-img{
+    height: 30px;
+    width: 30px;
 }
 
 .taskbar{

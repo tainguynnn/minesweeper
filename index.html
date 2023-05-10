@@ -45,7 +45,7 @@
             </div>
             <button id="flag-button">🚩</button>
             <button id="undo">
-                ⏪ 
+                <img class="undo-img" src="./assets/undo.png" alt=""> 
             </button>
         </div>
 
@@ -79,7 +79,7 @@
                     <p class="howToPlay__line">click on a tile to play, If you click a tile with a mine, you lose</p>
                     <p class="howToPlay__line">the Number in a tile show the number of mines around that tile</p>
                     <p class="howToPlay__line">In this game, there is only 10 mines. Your goal is to click all the tile without the mines inside</p>
-                    <p class="howToPlay__line">Mark the tile that you think there posibibly be a bomb to avoid accidentally click with the flag 🚩</p>
+                    <p class="howToPlay__line">Mark the tile that you think there posibibly be a bomb to avoid accidentally click with the flag 🚩using right click</p>
                     <p class="howToPlay__line">Click the smiley face to restart the game or the ⏪ to undo</p>
                     
                
@@ -91,10 +91,8 @@
 
     </body>
 <script>
-   
     var closeX = document.querySelector(".close-btn")
     var closeX2 = document.querySelector(".close-btn2")
-
     var overlay = document.querySelector(".overlay");
     var overlay2 = document.querySelector(".overlay2");
     var choose  = document.querySelector(".program.choose-flag")
@@ -104,7 +102,6 @@
     var time = 0;
     var mineCount = document.getElementById("mines-count")
     document.querySelector("#timer").innerHTML = time
-    
     setInterval(setTimer,1000)
     function setTimer(){
         if(mineCount != "won"){
