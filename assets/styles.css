@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -6,9 +6,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    
+
 }
-.overlay,.overlay2{
+
+.overlay,
+.overlay2 {
     position: fixed;
     top: 0;
     right: 0;
@@ -18,30 +20,35 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
     display: none;
 }
-.overlay.active,.overlay2.active{
+
+.overlay.active,
+.overlay2.active {
     display: flex;
 }
-.programs{
+
+.programs {
     height: 100%;
 }
 
-.program h2{
-    padding:20px ;
+.program h2 {
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.program img{
-    padding:20px ;
+.program img {
+    padding: 20px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.board-container{
+
+.board-container {
     margin-left: 700px;
     margin-right: 226px;
     border: 10px rgb(0, 0, 160) solid;
     background-color: lightgray;
 }
-.title{
+
+.title {
     padding-top: 1px;
     margin-top: 0;
     width: 100%;
@@ -49,14 +56,16 @@ body{
     display: flex;
     color: white;
 }
-.mine-left{
+
+.mine-left {
     border: 10px solid darkgray;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#mines-count,#timer{
+#mines-count,
+#timer {
     background-color: black;
     height: 60px;
     width: 30%;
@@ -65,21 +74,23 @@ body{
     font-size: 50px;
     border: 10px solid lightgray;
 }
-.title-img{
+
+.title-img {
     background-color: transparent;
     width: 60px;
     height: 60px;
 }
-#board{
+
+#board {
     width: 400px;
     height: 400px;
     border: 10px solid darkgray;
-    background-color: lightgray ;
+    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
 }
 
-#board div{
+#board div {
     width: 48px;
     height: 48px;
     border: 1px solid rgba(33, 33, 33, 0.83);
@@ -89,36 +100,43 @@ body{
     align-items: center;
 }
 
-.tile-clicked{
+.tile-clicked {
     background: darkgray;
 }
 
-.x1{
+.x1 {
     color: blue;
 }
-.x2{
+
+.x2 {
     color: green;
 }
-.x3{
+
+.x3 {
     color: red;
 }
-.x4{
+
+.x4 {
     color: navy;
 }
-.x5{
+
+.x5 {
     color: brown;
 }
-.x6{
+
+.x6 {
     color: teal;
 }
-.x7{
+
+.x7 {
     color: black;
 }
-.x8{
+
+.x8 {
     color: gray;
 }
 
-#flag-button{
+#flag-button {
     width: 100px;
     height: 50px;
     font-size: 20px;
@@ -128,19 +146,20 @@ body{
     display: none;
 }
 
-.restart{
+.restart {
     width: 25%;
     height: 100%;
 }
-.restart-face{
+
+.restart-face {
     height: 58px;
     background-color: darkgray;
-    
+
 }
 
 
 
-.choose{
+.choose {
     width: 60%;
     margin: 200px;
     border: 1px solid black;
@@ -149,7 +168,9 @@ body{
     background-color: lightgray;
     display: none;
 }
-.close-btn,.close-btn2{
+
+.close-btn,
+.close-btn2 {
     position: absolute;
     right: 0;
     padding: 10px 15px;
@@ -157,11 +178,17 @@ body{
     color: white;
     background-color: red;
 }
-.choose.active{
+
+.choose.active {
     display: block;
 }
 
-#flag1, #flag2, #flag3,#bomb1, #bomb2, #bomb3{
+#flag1,
+#flag2,
+#flag3,
+#bomb1,
+#bomb2,
+#bomb3 {
     margin-left: 20px;
     width: 100px;
     height: 50px;
@@ -170,30 +197,40 @@ body{
     border: none;
 }
 
-#undo{
+#undo {
     margin-left: 20px;
     width: 100px;
     height: 50px;
     font-size: 20px;
     background-color: lightgray;
-    
+
 }
 
-#flag1:hover, #flag2:hover, #flag3:hover,#bomb1:hover, #bomb2:hover, #bomb3:hover{
+#flag1:hover,
+#flag2:hover,
+#flag3:hover,
+#bomb1:hover,
+#bomb2:hover,
+#bomb3:hover {
     background-color: black;
 }
 
-#flag1, #flag2, #flag3,#bomb1, #bomb2, #bomb3{
+#flag1,
+#flag2,
+#flag3,
+#bomb1,
+#bomb2,
+#bomb3 {
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.undo-img{
+.undo-img {
     height: 30px;
     width: 30px;
 }
 
-.taskbar{
+.taskbar {
     left: 0;
     height: 50px;
     background-color: blue;
@@ -202,10 +239,10 @@ body{
     position: fixed;
     display: flex;
     justify-content: flex-start;
-   
+
 }
 
-.windows{
+.windows {
     background-color: green;
     height: 100%;
     width: 15%;
@@ -213,17 +250,19 @@ body{
     display: flex;
     align-items: center;
 }
-.windows img{
+
+.windows img {
     height: 100%;
     background-color: green;
     left: 0;
-    
+
 }
 
-.howToPlay{
+.howToPlay {
     display: none;
 }
-.howToPlay.active{
+
+.howToPlay.active {
     position: fixed;
     display: flex;
     width: 60%;
@@ -233,16 +272,18 @@ body{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.howToPlay h1{
+
+.howToPlay h1 {
     text-align: center;
     width: 100%;
 }
-.howToPlay__list{
-    
+
+.howToPlay__list {
+
     list-style-type: none;
 }
-.howToPlay__line{
+
+.howToPlay__line {
     padding: 6px 12px;
 
 }
-

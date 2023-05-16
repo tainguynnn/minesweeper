@@ -3,9 +3,9 @@ var rows = 8;
 var columns = 8;
 
 var minesCount = 10;
-var minesLocation = []; 
+var minesLocation = [];
 
-var tilesClicked = 0; 
+var tilesClicked = 0;
 var flagEnabled = false;
 
 var gameOver = false;
@@ -229,19 +229,19 @@ function setBomb3() {
 }
 
 function setflag1() {
-    alert("flag changed");
+  alert("flag changed");
   flag = "🚩";
   document.getElementById("flag-button").innerText = flag;
   return;
 }
 function setflag2() {
-    alert("flag changed");
+  alert("flag changed");
   flag = "🏳️";
   document.getElementById("flag-button").innerText = flag;
   return;
 }
 function setflag3() {
-    alert("flag changed");
+  alert("flag changed");
   flag = "🏴";
   document.getElementById("flag-button").innerText = flag;
   return;
